@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Tshepo’s Organic Haven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tshepo’s Organic Haven</h1>
+        <nav>
+            <a href="index.html">Home</a> | <a href="Gallery.html">Gallery</a> | <a href="about.html">About Us</a> | <a href="workshops.html">Workshops</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Story</h2>
+        <p>Tshepo’s Organic Haven provides sustainable beauty to every garden.</p>
+        
+        <h3>Business Hours</h3>
+        <ul>
+            <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+            <li>Saturday: 10:00 AM - 4:00 PM</li>
+            <li>Sunday: Closed</li>
+        </ul>
+
+        <h3>Contact Us / Custom Orders</h3>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" required><br><br>
+
+            <label for="type">Request Type:</label><br>
+            <select id="type">
+                <option value="general">General Feedback</option>
+                <option value="custom">Custom Order</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" rows="4" cols="30"></textarea><br><br>
+
+            <button type="submit" onclick="handleFormSubmit(event)">Submit Request</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="newsletter">
+            <p>Subscribe to our newsletter for garden tips:</p>
+            <input type="email" placeholder="Enter your email">
+            <button type="button" onclick="handleSubscribe()">Subscribe</button>
+        </div>
+        <nav>
+            <a href="index.html">Home</a> | <a href="Gallery.html">Gallery</a> | <a href="about.html">About Us</a> | <a href="workshops.html">Workshops</a>
+        </nav>
+        <p>Follow us on Social Media: [Facebook] [Instagram] [Twitter]</p>
+        <p>&copy; 2026 Tshepo’s Organic Haven</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

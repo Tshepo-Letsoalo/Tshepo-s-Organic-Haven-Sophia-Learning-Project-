@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Botanical Collection - Tshepo’s Organic Haven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #F5F5DC; margin: 0; font-family: Arial, sans-serif;">
+
+    <header style="background-color: #556B2F; color: white; text-align: center; padding: 40px 20px;">
+        <h1 style="font-size: 2.5em; margin: 0;">Tshepo’s Organic Haven</h1>
+        <nav style="margin-top: 20px;">
+            <a href="index.html" style="color: white; text-decoration: none; margin: 0 15px;">Home</a> |
+            <a href="Gallery.html" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">Gallery</a> |
+            <a href="about.html" style="color: white; text-decoration: none; margin: 0 15px;">About Us</a> |
+            <a href="workshops.html" style="color: white; text-decoration: none; margin: 0 15px;">Workshops</a>
+        </nav>
+    </header>
+
+    <main style="padding: 20px;">
+        <h2 style="text-align: center; color: #333; margin-top: 30px;">Our Botanical Collection</h2>
+        
+        <div style="text-align: center; margin-bottom: 30px;">
+            <button onclick="viewCart()" style="background: #556B2F; color: white; border: none; padding: 12px 20px; margin: 5px; cursor: pointer; border-radius: 4px; font-weight: bold;">View Shopping Cart</button>
+            <button onclick="clearCart()" style="background: #5D4037; color: white; border: none; padding: 12px 20px; margin: 5px; cursor: pointer; border-radius: 4px; font-weight: bold;">Clear Cart</button>
+        </div>
+
+        <table style="width: 100%; max-width: 1000px; margin: auto; border-collapse: collapse; background: white; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+            <tr style="background-color: #f2f2f2; text-align: left;">
+                <th style="padding: 15px; border: 1px solid #ddd;">Image</th>
+                <th style="padding: 15px; border: 1px solid #ddd;">Product Description</th>
+                <th style="padding: 15px; border: 1px solid #ddd;">Price</th>
+                <th style="padding: 15px; border: 1px solid #ddd;">Action</th>
+            </tr>
+            <tr>
+                <td style="padding: 15px; border: 1px solid #ddd; text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?w=150" alt="Olive Tree" style="border-radius: 4px;">
+                </td>
+                <td style="padding: 15px; border: 1px solid #ddd;">
+                    <strong style="font-size: 1.1em; color: #556B2F;">Premium Olive Tree</strong><br>
+                    <p style="margin: 5px 0; color: #666;">A symbol of peace and longevity, perfect for sunny indoor spots.</p>
+                </td>
+                <td style="padding: 15px; border: 1px solid #ddd; font-weight: bold;">$45.00</td>
+                <td style="padding: 15px; border: 1px solid #ddd; text-align: center;">
+                    <button onclick="addToCart('Premium Olive Tree', 45.00)" style="background: #556B2F; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 4px;">Add to Cart</button>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 15px; border: 1px solid #ddd; text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=150" alt="Indoor Fern" style="border-radius: 4px;">
+                </td>
+                <td style="padding: 15px; border: 1px solid #ddd;">
+                    <strong style="font-size: 1.1em; color: #556B2F;">Organic Indoor Fern</strong><br>
+                    <p style="margin: 5px 0; color: #666;">Lush greenery that naturally purifies your home's air.</p>
+                </td>
+                <td style="padding: 15px; border: 1px solid #ddd; font-weight: bold;">$25.00</td>
+                <td style="padding: 15px; border: 1px solid #ddd; text-align: center;">
+                    <button onclick="addToCart('Organic Indoor Fern', 25.00)" style="background: #556B2F; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 4px;">Add to Cart</button>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 15px; border: 1px solid #ddd; text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1459156212016-c812468e2115?w=150" alt="Succulent Mix" style="border-radius: 4px;">
+                </td>
+                <td style="padding: 15px; border: 1px solid #ddd;">
+                    <strong style="font-size: 1.1em; color: #556B2F;">Exotic Succulent Mix</strong><br>
+                    <p style="margin: 5px 0; color: #666;">A low-maintenance variety pack for modern garden aesthetics.</p>
+                </td>
+                <td style="padding: 15px; border: 1px solid #ddd; font-weight: bold;">$30.00</td>
+                <td style="padding: 15px; border: 1px solid #ddd; text-align: center;">
+                    <button onclick="addToCart('Exotic Succulent Mix', 30.00)" style="background: #556B2F; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 4px;">Add to Cart</button>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <footer style="background-color: #556B2F; color: white; text-align: center; padding: 30px 20px; margin-top: 50px;">
+        <p>Subscribe to our newsletter for garden tips:</p>
+        <div style="margin-bottom: 20px;">
+            <input type="email" id="subscriber-email" placeholder="Enter your email" style="padding: 8px; border: none; border-radius: 4px;">
+            <button onclick="handleSubscribe()" style="padding: 8px 15px; background: white; color: #556B2F; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-left: 5px;">Subscribe</button>
+        </div>
+        <div style="margin-bottom: 15px;">
+            <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Home</a> |
+            <a href="Gallery.html" style="color: white; margin: 0 10px; text-decoration: none;">Gallery</a> |
+            <a href="about.html" style="color: white; margin: 0 10px; text-decoration: none;">About Us</a> |
+            <a href="workshops.html" style="color: white; margin: 0 10px; text-decoration: none;">Workshops</a>
+        </div>
+        <p style="font-size: 0.8em; opacity: 0.8;">© 2026 Tshepo’s Organic Haven. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

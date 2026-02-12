@@ -1,0 +1,75 @@
+/* style.css - External Stylesheet for Tshepo’s Organic Haven */
+
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Light neutral background */
+  color: #333; /* Dark text for readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header & Footer Styling - Using Olive Green */
+header, footer {
+  background-color: #556B2F; /* Olive Green */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #E7A827; /* Sunlit Wheat highlight for hover */
+  text-decoration: underline;
+}
+
+/* Main Content Area */
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Table Styling for Gallery - Using Raw Umber for Borders */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+  border: 2px solid #826644; /* Raw Umber */
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+}
+
+/* Form Styling */
+form {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 5px solid #556B2F; /* Olive Green accent */
+}
+
+/* Buttons - Using Olive Green */
+button {
+  background-color: #556B2F;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #826644; /* Changes to Raw Umber on hover */
+}
