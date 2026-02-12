@@ -6,7 +6,7 @@
 ## 🎓 Academic Achievement
 * **Institution:** Sophia Learning / BSc Computer Science Path
 * **Course:** Introduction to Web Development (CS1005)
-* **Final Grade:** [Insert Your Score here, e.g., 98%]
+* **Final Grade:** 106/125
 * **Focus:** Responsive Design, Semantic HTML, and Vanilla JavaScript Integration.
 
 ## 📝 Project Overview
