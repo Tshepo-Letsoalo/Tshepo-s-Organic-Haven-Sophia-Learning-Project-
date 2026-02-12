@@ -1,4 +1,5 @@
 # 🌿 Tshepo's Organic Haven
+![Project Preview](screenshot.png)
 ### Sophia Learning: Web Programming 1 (CS1005) - Final Touchstone
 [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://tshepo-letsoalo.github.io/Tshepo-s-Organic-Haven-Sophia-Learning-Project-/)
 
